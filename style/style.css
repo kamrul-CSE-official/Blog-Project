@@ -304,14 +304,24 @@ footer{
 /* responsive start */
 @media (max-width: 992px) {
     #blog-banner-section{
-        flex-direction: column;        
+        flex-direction: column;
+        align-items: center;     
     }
     #blog-banner-section article{
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 5rem;
+        margin-left: 13rem;
+    }
+    #blog-banner-section aside{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+        margin-left: 10rem;
     }
     .card-container{
         width: 50%;
