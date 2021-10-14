@@ -54,6 +54,14 @@ body{
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+.btn:hover{
+    border: 1px solid;
+}
+.btn:active {
+    background-color: rgb(247, 188, 63);
+    box-shadow: 0 5px rgb(194, 194, 194);
+    transform: translateY(4px);
+  }
 /* reset code and common code ends here */
 
 /* Header Starts here */ 
@@ -182,11 +190,47 @@ nav li:hover{
 }
 /* blog-about end */
 
+/* Archives starts */
+#archives{
+    padding: 5rem 1rem;
+    min-height: 98vh;
+}
+
+.archives-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 00.1rem solid;
+}
+
+.archives-container-lists{
+    display: flex;
+    text-align: center;
+}
+
+.archives-container-list{
+    margin: 2rem;
+}
+
+.archives-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+.archives-img:hover{
+    transform: scale(1.1);
+}
+
+/* Archives end */
+
 /* responsive start */
 @media (max-width: 992px) {
     #blog-banner-section{
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
     #blog-banner-section article{
         width: 50%;
@@ -200,6 +244,9 @@ nav li:hover{
         flex-direction: column;
         flex-wrap: wrap;
     }
+    /* .archives-container-lists{
+        flex-wrap: wrap;
+    } */
 }
 @media (max-width: 768px) {
     html{
@@ -210,6 +257,9 @@ nav li:hover{
     }
     .card-container{
         width: 80%;
+    }
+    #archives{
+        min-height: auto;
     }
     
 }
@@ -250,6 +300,10 @@ nav li:hover{
 
     .card-container{
         width: 90%;
+    }
+
+    .archives-container-lists{
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 400px) {
