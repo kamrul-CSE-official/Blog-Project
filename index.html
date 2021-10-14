@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Blog</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
     <!-- Google Font -->
@@ -22,7 +22,7 @@
         </figure>
 
         <nav aria-label="Main Menu">
-            <ul role="menuber">
+            <ul role="menuber" aria-label="Main Menu">
                 <li role="none"><a href="#" class="nav-link" role="menuitem">Home</a></li>
                 <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
                 <li role="none"><a href="#" class="nav-link" role="menuitem">Archives</a></li>
@@ -34,7 +34,8 @@
     </header>
     <!-- Header end here -->
 
-    <!--main starts-->
+    <main class="main">
+        <!--main starts-->
     <section id="blog-banner-section">
         <article>
             <h1 class="banner-heading">Web Development</h1>
@@ -73,7 +74,7 @@
         <div class="archives-container">
             <ul class="archives-container-lists">
                 <li class="archives-container-list">
-                    <img src="images/img1.jpg" alt="image1" class="archives-img">
+                    <img src="images/img3.jpg" alt="image1" class="archives-img">
                 </li>
                 <li class="archives-container-list">
                     <img src="images/img2.jpg" alt="image1" class="archives-img">
@@ -81,9 +82,80 @@
                 <li class="archives-container-list">
                     <img src="images/img3.jpg" alt="image1" class="archives-img">
                 </li>
+                <li class="archives-container-list">
+                    <img src="images/img2.jpg" alt="image1" class="archives-img">
+                </li>
+                <li class="archives-container-list">
+                    <img src="images/img2.jpg" alt="image1" class="archives-img">
+                </li>
              </ul>
         </div>
     </section>
     <!-- Archive Section End -->
+
+    <!--Blog posts section starts here  -->
+    <section id="blog-posts" class="section-center">
+        <h2 class="section-heading blog-posts-heading">Blog Posts</h2>
+        <div class="blog-post">
+            <aside class="blog-post-aside">
+                <img src="images/laptop.jpg" alt="laptop" class="blog-img">
+            </aside>
+            <article class="blog-content">
+                <h2 class="blog-heading">Blog 1</h2>
+                <h3 class="blog-sub-heading">Sub heading</h3>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolor fuga iure asperiores culpa vel. Architecto, at. A accusamus, quasi ab minus tempore est aspernatur.</p>
+                <button class="btn blog-btn" type="submit">Learn More</button>
+            </article>
+        </div>
+        <div class="blog-post">
+            <aside class="blog-post-aside">
+                <img src="images/laptop.jpg" alt="laptop" class="blog-img">
+            </aside>
+            <article class="blog-content">
+                <h2 class="blog-heading">Blog 1</h2>
+                <h3 class="blog-sub-heading">Sub heading</h3>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolor fuga iure asperiores culpa vel. Architecto, at. A accusamus, quasi ab minus tempore est aspernatur.</p>
+                <button class="btn blog-btn" type="submit">Learn More</button>
+            </article>
+        </div>
+        <div class="blog-post">
+            <aside class="blog-post-aside">
+                <img src="images/laptop.jpg" alt="laptop" class="blog-img">
+            </aside>
+            <article class="blog-content">
+                <h2 class="blog-heading">Blog 1</h2>
+                <h3 class="blog-sub-heading">Sub heading</h3>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolor fuga iure asperiores culpa vel. Architecto, at. A accusamus, quasi ab minus tempore est aspernatur.</p>
+                <button class="btn blog-btn" type="submit">Learn More</button>
+            </article>
+        </div>
+        
+    </section>
+    <!-- Blog posts section end here -->
+    </main>
+    <!-- footer section start here -->
+    <footer>
+        <p class="copyright-text">Copyright &copy: by MD.Kamrul Hasan. All rights reserved.</p>
+        <nav aria-label="Footer Menu">
+            <ul role="menuber2" id="menubar2" aria-label="Footer Menu">
+                <li role="none"><a href="https://facebook.com/kamrul.h.m.77" target="_blank" class="nav-link" role="menuitem">
+                    <i class="fab fa-facebook footer-icon"></i>
+                </a></li>
+                <li role="none"><a href="https://www.youtube.com/channel/UCBVXvEK3w9l5pu0Qp06WvkA" target="_blank" class="nav-link" role="menuitem">
+                    <i class="fab fa-youtube footer-icon"></i>
+                </a></li>
+                <li role="none"><a href="https://github.com/Kamrul-H-Manzur" target="_blank" class="nav-link" role="menuitem">
+                    <i class="fab fa-github footer-icon"></i>
+                </a></li>
+                <li role="none"><a href="https://github.com/Kamrul-H-Manzur" target="_blank" class="nav-link" role="menuitem">
+                    <i class="fab fa-linkedin footer-icon"></i>
+                </a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    <!-- footer section end here -->
+
+
 </body>
 </html>
