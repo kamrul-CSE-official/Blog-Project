@@ -125,9 +125,13 @@ nav li:hover{
     justify-content: center;
 }
 
-#blog-banner aside{
+#blog-banner-section aside{
     flex-basis: 50%;
     text-align: center;
+    transition: transform 0.5s;
+}
+#blog-banner-section aside:hover{
+    transform: scale(1.09);
 }
 
 .banner-heading{
