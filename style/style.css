@@ -286,6 +286,48 @@ nav li:hover{
     width: 30%;
 }
 /* blog posts end */
+/* Contact section starts here */
+#contact-section{
+    background-color: #c4c4c4;
+}
+#contact-form{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+input, textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-btn{
+    width: 30%;
+}
+/* Contact section end here */
 /* Footer Section start*/
 footer{
     background-color: black;
@@ -352,6 +394,9 @@ footer{
         margin-bottom: 3rem;
         width: 80%;
     }
+    #contact-section{
+        min-height: auto;
+    }
 }
 @media (max-width: 600px) {
     html{
@@ -403,6 +448,15 @@ footer{
     }
     #menubar2{
         display: flex;
+    }
+    #contact-form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control label{
+        margin-bottom: 0.5rem;
     }
 }
 @media (max-width: 400px) {
